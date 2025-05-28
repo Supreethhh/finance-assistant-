@@ -29,11 +29,11 @@ st.title("📈 Morning Market Brief Assistant")
 # New user input box
 user_input = st.text_input("Ask a financial question:", value="What’s our risk exposure in Asia tech stocks today, and highlight any earnings surprises?")
 
-st.title("Finance Assistant")
 if st.button("Ask Agent"):
     with st.spinner("Thinking..."):
         result = handle_query_custom(user_input)  # result = Gemini's full response
         st.success("Here's your market brief:")
-        st.speak_text("assistant").write(result)
+        st.chat_message("assistant").write(result)
+
 
 
