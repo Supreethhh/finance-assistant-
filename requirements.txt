@@ -1,0 +1,11 @@
+streamlit~=1.45.1
+yfinance~=0.2.61
+beautifulsoup4~=4.13.4
+openai-whisper~=20240930
+pyttsx3~=2.98
+faiss-cpu~=1.11.0
+requests~=2.32.3
+
+protobuf~=6.31.0
+dotenv~=0.9.9
+python-dotenv~=1.1.0
