@@ -1,19 +1,8 @@
-import whisper
-import pyttsx3
-import tempfile
-
-model = whisper.load_model("base")
-engine = pyttsx3.init()
-
-
-def transcribe_audio(audio_path):
-    result = model.transcribe(audio_path)
-    return result['text']
-
+from gtts import gTTS
+import os
 
 def speak_text(text):
-    engine.say(text)
-    engine.runAndWait()
-
-
-
+    tts = gTTS(text=text, lang='en')
+    audio_file = "output.mp3"
+    tts.save(audio_file)
+    os.system("mpg123 output.mp3")  # Requires mpg123
