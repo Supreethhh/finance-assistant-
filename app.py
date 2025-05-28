@@ -3,7 +3,7 @@ from agents.api_agent import get_asia_tech_exposure
 from agents.language_agent import generate_market_brief
 from agents.retriever_agent import retrieve_relevant_docs
 from agents.scraping_agent import scrape_earnings_news
-from agents.voice_agent import transcribe_audio, speak_text
+from agents.voice_agent import speak_text
 import os
 
 ASIA_TECH_TICKERS = ["TSM", "005930.KS"]  # TSMC, Samsung
