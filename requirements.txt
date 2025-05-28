@@ -6,6 +6,6 @@ pyttsx3~=2.98
 faiss-cpu~=1.11.0
 requests~=2.32.3
 google-generativeai
-protobuf~=6.31.0
+protobuf
 dotenv~=0.9.9
 python-dotenv~=1.1.0
