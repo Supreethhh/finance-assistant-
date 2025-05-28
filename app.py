@@ -34,6 +34,6 @@ if st.button("Ask Agent"):
     with st.spinner("Thinking..."):
         result = handle_query_custom(user_input)  # result = Gemini's full response
         st.success("Here's your market brief:")
-        st.speak.text("assistant").write(result)
+        st.speak_text("assistant").write(result)
 
 
