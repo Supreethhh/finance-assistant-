@@ -30,10 +30,10 @@ st.title("📈 Morning Market Brief Assistant")
 user_input = st.text_input("Ask a financial question:", value="What’s our risk exposure in Asia tech stocks today, and highlight any earnings surprises?")
 
 st.title("Finance Assistant")
-text = st.text_input("Enter text to speak")
-if text:
-    speak_text(text)
-    with open("output.mp3", "rb") as f:
-        st.audio(f, format="audio/mp3")
+if st.button("Ask Agent"):
+    with st.spinner("Thinking..."):
+        result = handle_query_custom(user_input)  # result = Gemini's full response
+        st.success("Here's your market brief:")
+        st.speak.text("assistant").write(result)
 
 
