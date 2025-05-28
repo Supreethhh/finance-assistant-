@@ -2,7 +2,7 @@ streamlit~=1.45.1
 yfinance~=0.2.61
 beautifulsoup4~=4.13.4
 openai-whisper
-pyttsx3
+pyttsx3~=2.98
 faiss-cpu~=1.11.0
 requests~=2.32.3
 google-generativeai
