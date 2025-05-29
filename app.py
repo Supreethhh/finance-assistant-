@@ -24,16 +24,6 @@ def handle_query_custom(question):
     speak_text(brief)
     return brief
 
-def speak_text(text):
-    from gtts import gTTS
-    from playsound import playsound
-
-    audio_file = "output.mp3"
-    tts = gTTS(text=text, lang='en')
-    tts.save(audio_file)
-    playsound(audio_file)
-    os.remove(audio_file)
-
 
 st.title("📈 Morning Market Brief Assistant")
 
@@ -45,7 +35,7 @@ if st.button("Ask Agent"):
         result = handle_query_custom(user_input)  # result = Gemini's full response
         st.success("Here's your market brief:")
         st.chat_message("assistant").write(result)
-        speak_text(result) 
+    
 
 
 
