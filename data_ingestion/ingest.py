@@ -7,10 +7,10 @@ from sentence_transformers import SentenceTransformer
 DATA_DIR = "data_ingestion"
 os.makedirs(DATA_DIR, exist_ok=True)
 
-# Load sentence transformer model
+
 MODEL = SentenceTransformer("all-MiniLM-L6-v2")
 
-# Sample market-related texts
+
 sample_docs = [
     "TSMC earnings beat expectations by 4%.",
     "Samsung earnings missed estimates by 2%.",
