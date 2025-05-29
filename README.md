@@ -1,4 +1,3 @@
-# Finance Assistant
 #  Multi-Agent Finance Assistant
 
 ##  Architecture
