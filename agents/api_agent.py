@@ -16,5 +16,3 @@ def get_asia_tech_exposure(tickers):
                 'change_pct': change_pct
             }
     return exposure_data
-# Fetch market data using yfinance
-# Fetch market data using yfinance
