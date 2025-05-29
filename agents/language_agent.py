@@ -3,8 +3,8 @@ import google.generativeai as genai
 from dotenv import load_dotenv
 
 
-load_dotenv()
-api_key = os.getenv("GEMINI_API_KEY")
+
+api_key ="AIzaSyAmJ_0QdNIV-aLfeohuWKRm6CJ4w8TEHhM"
 
 genai.configure(api_key=api_key)
 
