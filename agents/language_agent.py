@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 
 
-api_key ="AIzaSyAmJ_0QdNIV-aLfeohuWKRm6CJ4w8TEHhM"
+api_key =""
 
 genai.configure(api_key=api_key)
 
